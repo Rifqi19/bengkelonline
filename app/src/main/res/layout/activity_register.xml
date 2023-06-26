@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="-110dp"
+        android:src="@drawable/uiheader" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textSize="20pt"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:layout_marginTop="-120dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nama "
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@color/black"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"/>
+    <EditText
+        android:id="@+id/nama"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/nameaccount"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Email"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@color/black"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Password"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@color/black"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/custom_input"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Password Kembali"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@color/black"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"/>
+    <EditText
+        android:id="@+id/password2"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/custom_input"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="50dp"
+        android:text="Sudah Punya Akun?"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfair"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/masuk"
+            android:onClick="btnmasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:paddingLeft="50dp"
+            android:textColor="#0544FF"
+            android:fontFamily="@font/playfair"/>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/daftar"
+        android:backgroundTint="@color/white"/>
+
+
+
+</LinearLayout>

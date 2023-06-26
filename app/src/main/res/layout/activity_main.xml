@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:text="Hallo, Selamat Datang"
+            android:fontFamily="@font/playfair"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/namaPengguna"
+            android:onClick="btnPengeluaran"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Catatan Pengeluaran"
+            android:fontFamily="@font/playfair"
+            android:textColor="#003EFA"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv1"/>
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_marginLeft="215dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnlogout"
+            android:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginLeft="50dp"
+        android:layout_width="285dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableEnd="@drawable/search"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_input"
+        android:paddingEnd="10dp"
+        android:inputType="text"
+        android:text="Cari"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bengkel Terdekat"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/playfair"/>
+    <ImageButton
+        android:id="@+id/btnTambalBan"
+        android:layout_width="285dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/tambalban"
+        android:backgroundTint="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Tambal Ban Terdekat"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/playfair"/>
+
+    <ImageButton
+        android:id="@+id/btnTambahAngin"
+        android:layout_width="285dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/tambahangin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Ganti Ban Terdekat"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/playfair"/>
+    <ImageButton
+        android:id="@+id/btnGantiBan"
+        android:layout_width="285dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/gantiban"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
